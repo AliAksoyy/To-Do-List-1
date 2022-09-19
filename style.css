@@ -9,10 +9,14 @@ body {
     height: 100vh;
     background: url(./img/img-5.jpg) no-repeat center center / cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.container {
+    border: 1px solid blue;
+    margin-bottom: 1.5rem;
+}
 
 #add-task-container {
     display: flex; 
@@ -21,6 +25,7 @@ body {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -41,4 +46,33 @@ input {
     color: green;
     border: 1px solid green;
     border-radius: 10px;
+}
+
+#add-task:hover {
+    background-color: green;
+    color: #fff;
+}
+/* Styling for task which get added to to-do list */
+
+.task {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    
+}
+.task button {
+    flex: 1;
 }

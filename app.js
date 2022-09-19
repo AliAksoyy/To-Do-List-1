@@ -30,4 +30,15 @@ addTask.addEventListener("click", () =>{
     taskContainer.appendChild(task)
    }
    inputTask.value = ""
+
+   checkButton.addEventListener("click", ()=> {
+    document.querySelector(".checkTask").parentElement.style.textDecoration = "line-through"
+    document.querySelector(".checkTask").style.backgroundColor="green"
+   })
+
+   deleteButton.addEventListener("click", function(e) {
+    // console.log(e.target)
+    let target = e.target;
+    target.parentElement.parentElement.remove()
+   })
 })
